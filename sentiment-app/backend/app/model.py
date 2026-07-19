@@ -11,8 +11,6 @@ ARTIFACTS_DIR = Path(__file__).parent / "artifacts"
 
 
 class SentimentANN(nn.Module):
-    """Must match the architecture used during training exactly,
-    or the saved state_dict will fail to load."""
 
     def __init__(self, input_size, num_classes=3):
         super().__init__()
@@ -63,8 +61,7 @@ class SentimentModel:
         self.model.eval()
 
     def preprocess(self, text: str) -> str:
-        """Mirrors the cleaning pipeline used in the training notebook:
-        lowercase -> strip punctuation -> strip digits -> collapse whitespace -> drop stopwords."""
+        
         text = text.lower()
         text = text.translate(str.maketrans("", "", string.punctuation))
         text = re.sub(r"\d+", "", text)
