@@ -6,8 +6,6 @@ from app.model import SentimentModel
 
 app = FastAPI(title="Sentiment Analysis API", version="1.0.0")
 
-# Allow the frontend (served from a different origin/port) to call this API.
-# Lock this down to your real frontend origin(s) before deploying.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
