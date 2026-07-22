@@ -1,8 +1,8 @@
-# 🧠 Sentiment Analysis Web Application
+# Sentiment Analysis Web Application
 
 A full-stack AI-powered Sentiment Analysis web application that classifies user comments into **Positive**, **Neutral**, and **Negative** sentiments using a Deep Learning model built with **PyTorch**.
 
-## 🚀 Features
+##  Features
 
 - Real-time sentiment prediction
 - Three-class classification (Positive, Neutral, Negative)
@@ -12,7 +12,7 @@ A full-stack AI-powered Sentiment Analysis web application that classifies user 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### AI / Machine Learning
 - Python
@@ -35,7 +35,7 @@ A full-stack AI-powered Sentiment Analysis web application that classifies user 
 
 ---
 
-## 🧠 Model Pipeline
+##  Model Pipeline
 
 ### Data Preprocessing
 - Remove null values & duplicates
@@ -94,7 +94,7 @@ Positive | Neutral | Negative
 
 ---
 
-## ⚙️ Working Flow
+## Working Flow
 
 ```text
 User Input
@@ -120,7 +120,7 @@ Sentiment Prediction
 
 ---
 
-## 📷 Project Demo
+##  Project Demo
 
 🔗 **LinkedIn Demo**
 
@@ -128,7 +128,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7484301757800402945/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Indunil Udayanga**
 
