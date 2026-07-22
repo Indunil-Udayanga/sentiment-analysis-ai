@@ -1,43 +1,141 @@
-# Sentiment Analysis
+# 🧠 Sentiment Analysis Web Application
 
-An AI-powered **Deep Learning** web application that classifies text into **Positive**, **Neutral**, or **Negative** sentiments using an **Artificial Neural Network (ANN)**. Built with **FastAPI** for the backend and **React** for the frontend, delivering fast and accurate real-time sentiment predictions.
+A full-stack AI-powered Sentiment Analysis web application that classifies user comments into **Positive**, **Neutral**, and **Negative** sentiments using a Deep Learning model built with **PyTorch**.
 
-## Features
+## 🚀 Features
 
-- Positive, 😐 Neutral, 😞 Negative sentiment classification
-- Deep Learning (ANN) based prediction
+- Real-time sentiment prediction
+- Three-class classification (Positive, Neutral, Negative)
 - FastAPI REST API
-- Modern React frontend
-- Confidence score for each prediction
-- Responsive user interface
+- Responsive React frontend *(AI-generated)*
+- Fast and accurate inference
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Backend:** FastAPI, Pydantic
-- **Machine Learning:** PyTorch, Deep Learning (ANN), TF-IDF, Scikit-learn
+### AI / Machine Learning
+- Python
+- PyTorch
+- Scikit-learn
+- Pandas
+- NumPy
+- NLTK
+- TF-IDF Vectorizer
 
-## Installation
+### Backend
+- FastAPI
+- Uvicorn
 
-```bash
-# Backend
-pip install -r requirements.txt
-uvicorn main:app --reload
+### Frontend
+- React.js *(AI-generated UI)*
+- HTML
+- CSS
+- JavaScript
 
-# Frontend
-npm install
-npm run dev
+---
+
+## 🧠 Model Pipeline
+
+### Data Preprocessing
+- Remove null values & duplicates
+- Convert text to lowercase
+- Remove punctuation & numbers
+- Remove stopwords
+- Clean whitespace
+
+### Feature Extraction
+- TF-IDF Vectorizer (`max_features=5000`)
+
+### Model Architecture
+
+```text
+Input Text
+     │
+     ▼
+Text Preprocessing
+     │
+     ▼
+TF-IDF Vectorizer (5000 Features)
+     │
+     ▼
+Linear (5000 → 256)
+     │
+    ReLU
+     │
+ Dropout (0.3)
+     │
+     ▼
+Linear (256 → 128)
+     │
+    ReLU
+     │
+ Dropout (0.3)
+     │
+     ▼
+Linear (128 → 64)
+     │
+    ReLU
+     │
+     ▼
+Linear (64 → 3)
+     │
+     ▼
+Softmax
+     │
+     ▼
+Positive | Neutral | Negative
 ```
 
-## Preview
+### Training
+- Loss Function: CrossEntropyLoss
+- Optimizer: Adam
+- Framework: PyTorch
 
-> Add screenshots of your application here.
+---
+
+## ⚙️ Working Flow
+
+```text
+User Input
+     │
+     ▼
+Text Preprocessing
+     │
+     ▼
+TF-IDF Feature Extraction
+     │
+     ▼
+PyTorch ANN Model
+     │
+     ▼
+FastAPI Backend
+     │
+     ▼
+React Frontend
+     │
+     ▼
+Sentiment Prediction
+```
+
+---
+
+## 📷 Project Demo
+
+🔗 **LinkedIn Demo**
+
+https://www.linkedin.com/feed/update/urn:li:activity:7484301757800402945/
+
+---
 
 ## 👨‍💻 Author
 
 **Indunil Udayanga**
 
-GitHub: https://github.com/Indunil-Udayanga
+Computer Science Undergraduate | AI & Machine Learning Enthusiast
+
+- GitHub: https://github.com/Indunil-Udayanga
+- LinkedIn: https://www.linkedin.com/in/indunil-udayanga-8a908b38a/
 
 ## 📄 License
 
